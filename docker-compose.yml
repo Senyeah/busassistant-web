@@ -2,8 +2,6 @@ version: "2"
 services:
   app:
     image: nimmis/apache-php7:latest
-    ports:
-      - "8081:80"
     volumes:
       - "./:/var/www/html"
     links:
@@ -11,8 +9,12 @@ services:
     build: .
     environment:
       - VIRTUAL_HOST=busassistant.xyz
+      - LETSENCRYPT_HOST=busassistant.xyz
+      - LETSENCRYPT_EMAIL=jackgreenhill@me.com
+    network_mode: "bridge"
   otp:
     image: goabout/opentripplanner:0.19.0
     volumes:
       - "./resources/otp:/data:ro"
     command: otp --build /data --inMemory
+    network_mode: "bridge"
