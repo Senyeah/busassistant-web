@@ -8,6 +8,7 @@ services:
       - "./:/var/www/html"
     links:
       - otp
+    build: .
     environment:
       - VIRTUAL_HOST=busassistant.xyz
   otp:
