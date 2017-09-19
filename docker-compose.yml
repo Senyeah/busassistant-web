@@ -1,0 +1,15 @@
+version: "2"
+services:
+  app:
+    image: nimmis/apache-php7:latest
+    ports:
+      - "8081:80"
+    volumes:
+      - "./:/var/www/html"
+    links:
+      - otp
+  otp:
+    image: goabout/opentripplanner:0.19.0
+    volumes:
+      - "./resources/otp:/data:ro"
+    command: otp --build /data --inMemory

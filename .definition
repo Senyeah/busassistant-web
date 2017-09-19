@@ -1,0 +1,5 @@
+base "endpoints"
+
+export GET "/version.php" to "VersionRequest" in "requests.php"
+export GET "/latest.php" to "LatestDatabaseRequest" in "requests.php"
+export GET "/trip_planner.php" to "TripPlannerRequest" in "requests.php"

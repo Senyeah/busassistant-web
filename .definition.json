@@ -1,0 +1,1 @@
+{"GET": {"version.php": {"/": {"file": "/endpoints/requests.php", "class": "VersionRequest", "parameters": {}}}, "trip_planner.php": {"/": {"file": "/endpoints/requests.php", "class": "TripPlannerRequest", "parameters": {}}}, "latest.php": {"/": {"file": "/endpoints/requests.php", "class": "LatestDatabaseRequest", "parameters": {}}}}}
