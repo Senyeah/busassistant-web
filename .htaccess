@@ -2,6 +2,7 @@ RewriteEngine On
 
 RewriteRule ^$ /support
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !/support
 RewriteCond %{REQUEST_FILENAME} !request.php
-RewriteCond %{QUERY_STRING} !^$
 RewriteRule ^(.*)$ /engine/request.php?arguments=$1 [L,QSA]
