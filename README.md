@@ -50,4 +50,4 @@ Each trip is composed of one or more _segments_ between different locations, and
 | `duration` | Segment duration, in minutes |
 | `from` | An object containing: `lat`: Segment start latitude, `lon`: Segment start longitude, `stop`: If segment starts at a bus stop, this is its stop code. Not set otherwise. |
 | `to` | An object containing: `lat`: Segment end latitude, `lon`: Segment end longitude, `stop`: If segment finishes at a bus stop, this is its stop code. Not set otherwise. |
-| `points` | An array contaning one or more `[latitude, longitude]` arrays |
+| `points` | An array containing one or more `[latitude, longitude]` arrays |
