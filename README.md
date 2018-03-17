@@ -6,7 +6,7 @@ This contains the server powering the Bus Assistant for Christchurch app. This c
 
 ##### `/version.php`
 
-Returns the version of the database, most likely being `2018-03-08-00-30` unless I can be bothered updating it.
+Returns the version of the database, most likely being `2018-03-18-00-30` unless I can be bothered updating it.
 
 ##### `/latest.php`
 

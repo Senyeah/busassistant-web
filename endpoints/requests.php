@@ -1,7 +1,7 @@
 <?php
 
 require_once '../engine/runtime.php';
-define('VERSION', '2018-03-08-00-30');
+define('VERSION', '2018-03-18-00-30');
 
 class LatestDatabaseRequest implements APIEngine\Requestable {
 
